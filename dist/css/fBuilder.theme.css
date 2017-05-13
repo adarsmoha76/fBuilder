@@ -1,0 +1,236 @@
+
+#fBuilder-container {
+	border: 1px solid #cccccc;
+    box-shadow: -2px 2px 4px -2px rgba(0, 0, 0, 0.5);
+}
+
+#fBuilder-left {
+	/*border: 1px solid rgba(0, 0, 0, 0.2);*/
+}
+#fBuilder-left:hover,
+#fBuilder-left:focus {
+	/*box-shadow: -2px 2px 5px -2px rgba(0, 0, 0, 0.7);*/
+}
+#fBuilder-middle {
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    background: #fff;
+    z-index: 1;
+}
+#fBuilder-middle:hover,
+#fBuilder-middle:focus {
+    /*box-shadow: -2px 2px 5px -2px rgba(0, 0, 0, 0.7);*/
+}
+#fBuilder-right {
+	/*border: 1px solid rgba(0, 0, 0, 0.2);*/
+}
+#fBuilder-right:hover,
+#fBuilder-right:focus {
+	/*box-sizing: -2px -2px 5px -2px rgba(0, 0, 0, 0.7);*/
+}
+
+
+.fBuilder-page-container::-webkit-scrollbar {
+	width: 5px;
+}
+.fBuilder-page-container::-webkit-scrollbar-track {
+	background: none;
+}
+.fBuilder-page-container::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 0, 0, 0.2);
+}
+.fBuilder-page-container::-webkit-scrollbar-thumb:hover {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.fBuilder-page-operations-container {
+    box-shadow: 0 2px 4px -2px rgba(0, 0, 0, 0.5);
+}
+
+
+
+#fBuilder-middle > .row:not(.fBuilder-page-container) {
+    border-bottom: 1px solid #cccccc;
+}
+#fBuilder-form-title {
+	border: none;
+}
+[data-target="#fBuilder-form-description-container"] {
+    border-top: none;
+    border-right: none;
+    border-bottom: none;
+}
+#fBuilder-form-description {
+    border: none;
+    border-top: 1px solid #cccccc;
+}
+
+.fBuilder-page {
+	/*padding: 10px !important;*/
+	/*border: 1px dotted #aaaaaa;*/
+}
+
+.fBuilder-page-short-controls > button {
+    background: none;
+    border: none;
+    outline: none;
+}
+
+.fBuilder-page-switcher-container {
+    border: 1px solid #ccc;
+    padding: 5px 2px;
+    border-top: none;
+}
+.fBuilder-page-switcher-container.active {
+    background-color: #8bc34a;
+    color: #ffffff;
+}
+
+.fBuilder-page-short-name-editor-btn {
+    color: #2196F3;
+}
+.fBuilder-page-short-name-editor-btn:hover,
+.fBuilder-page-short-name-editor-btn:focus {
+    color: #4caf50;
+}
+
+.fBuilder-remove-element-btn,
+.fBuilder-page-short-name-editor-remove-btn {
+    color: #FF9800;
+}
+.fBuilder-remove-element-btn:hover,
+.fBuilder-remove-element-btn:focus,
+.fBuilder-page-short-name-editor-remove-btn:hover,
+.fBuilder-page-short-name-editor-remove-btn:hover {
+	color: #ff0000;
+}
+
+
+#fBuilder-new-form {
+    background-color: #03A9F4;
+    color: #fff;
+    border: 1px solid #2196F3;
+}
+
+#fBuilder-new-form:hover,
+#fBuilder-new-form:focus {
+    background-color: #2196F3;
+    border-color: #2581ca;
+}
+
+#fBuilder-save-form {
+    background-color: #8BC34A;
+    color: #ffffff;
+    border: 1px solid #4CAF50;
+}
+#fBuilder-save-form:hover,
+#fBuilder-save-form:focus {
+    background-color: #4CAF50;
+    color: #ffffff;
+    border-color: #27a02c;
+}
+
+.fBuilder-form-element-container {
+    border: 1px dashed #bbbbbb;
+    /*box-shadow: -2px 2px 4px -2px rgba(0, 0, 0, 0.3);*/
+}
+.fBuilder-form-element-container:hover,
+.fBuilder-form-element-container:focus {
+	border: 1px solid #cccccc;
+    box-shadow: -2px 2px 4px -2px rgba(0, 0, 0, 0.7);
+}
+
+.fBuilder-element-extra-controls > button {
+	background: none;
+	border: none;
+	outline: none;
+}
+
+.fBuilder-move-up-btn,
+.fBuilder-move-down-btn,
+.fBuilder-move-page-up-btn,
+.fBuilder-move-page-down-btn {
+    color: #3F51B5;
+}
+.fBuilder-move-up-btn:hover,
+.fBuilder-move-up-btn:focus,
+.fBuilder-move-down-btn:hover,
+.fBuilder-move-down-btn:focus,
+.fBuilder-move-page-up-btn:hover,
+.fBuilder-move-page-up-btn:focus,
+.fBuilder-move-page-down-btn:hover,
+.fBuilder-move-page-down-btn:focus {
+    color: #673AB7;
+}
+
+
+
+#fBuilder-toggle-view { display: none; }
+label[for="fBuilder-toggle-view"] {
+    font-weight: normal;
+    font-size: 0.85em;
+    margin-right: 10px;
+    color: #ff0000;
+}
+#fBuilder-toggle-view:checked + label[for="fBuilder-toggle-view"] {
+	color: #00ff00;
+}
+/*
+label[for="fBuilder-toggle-view"]:after {
+	content: '\e083';
+	font-size: 1em;
+	color: #ff0000;
+    font-family: 'Glyphicons Halflings';
+}
+#fBuilder-toggle-view:checked + label[for="fBuilder-toggle-view"]:after {
+	content: '\e084';
+	color: #00ff00;
+}*/
+
+
+
+.fBuilder-form-element-checkbox-options-add-after,
+.fBuilder-form-element-checkbox-options-remove-me,
+.fBuilder-form-element-radio-options-add-after,
+.fBuilder-form-element-radio-options-remove-me,
+.fBuilder-form-element-dropdown-options-add-after,
+.fBuilder-form-element-dropdown-options-remove-me {
+	background: none;
+	border: none;
+	outline: none;
+}
+.fBuilder-form-element-checkbox-options-add-after,
+.fBuilder-form-element-checkbox-options-add,
+.fBuilder-form-element-radio-options-add-after,
+.fBuilder-form-element-radio-options-add,
+.fBuilder-form-element-dropdown-options-add-after,
+.fBuilder-form-element-dropdown-options-add {
+	color: #8BC34A;
+}
+.fBuilder-form-element-checkbox-options-remove-me,
+.fBuilder-form-element-radio-options-remove-me,
+.fBuilder-form-element-dropdown-options-remove-me {
+	color: #FF9800;
+}
+.fBuilder-form-element-checkbox-options-remove-me:hover,
+.fBuilder-form-element-checkbox-options-remove-me:focus,
+.fBuilder-form-element-radio-options-remove-me:hover,
+.fBuilder-form-element-radio-options-remove-me:focus,
+.fBuilder-form-element-dropdown-options-remove-me:hover,
+.fBuilder-form-element-dropdown-options-remove-me:focus {
+	color: #ff0000;
+}
+
+.fBuilder-form-element-checkbox-options-add-after:hover,
+.fBuilder-form-element-checkbox-options-add-after:focus,
+.fBuilder-form-element-checkbox-options-add:hover,
+.fBuilder-form-element-checkbox-options-add:focus,
+.fBuilder-form-element-radio-options-add-after:hover,
+.fBuilder-form-element-radio-options-add-after:focus,
+.fBuilder-form-element-radio-options-add:hover,
+.fBuilder-form-element-radio-options-add:focus,
+.fBuilder-form-element-dropdown-options-add-after:hover,
+.fBuilder-form-element-dropdown-options-add-after:focus,
+.fBuilder-form-element-dropdown-options-add:hover,
+.fBuilder-form-element-dropdown-options-add:focus {
+	color: #1da923;
+}

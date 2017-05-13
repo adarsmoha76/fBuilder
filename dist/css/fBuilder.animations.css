@@ -1,0 +1,63 @@
+#fBuilder-elements-appender .element-btn .fbuilder-element-btn,
+.fbuilder-pages-btn {
+	transition: all 0.2s;
+}
+
+
+.fBuilder-move-up-btn,
+.fBuilder-move-down-btn,
+.fBuilder-element-extra-controls > button,
+.fBuilder-page-short-controls > button,
+.fBuilder-move-down-btn,
+.fBuilder-move-page-up-btn,
+.fBuilder-form-element-checkbox-options-add-after,
+.fBuilder-form-element-checkbox-options-remove-me,
+label[for="fBuilder-toggle-view"] {
+	transform: none;
+	transition: all 0.2s;
+	cursor: pointer;
+}
+.fBuilder-move-up-btn:hover,
+.fBuilder-move-up-btn:focus,
+.fBuilder-move-down-btn:hover,
+.fBuilder-move-down-btn:focus,
+.fBuilder-element-extra-controls > button:hover,
+.fBuilder-element-extra-controls > button:focus,
+.fBuilder-page-short-controls > button:hover,
+.fBuilder-page-short-controls > button:focus,
+.fBuilder-move-page-up-btn:hover,
+.fBuilder-move-page-up-btn:focus,
+.fBuilder-move-page-down-btn:hover,
+.fBuilder-move-page-down-btn:focus,
+.fBuilder-form-element-checkbox-options-remove-me:hover,
+.fBuilder-form-element-checkbox-options-remove-me:focus,
+.fBuilder-form-element-checkbox-options-add-after:hover,
+.fBuilder-form-element-checkbox-options-add-after:focus,
+label[for="fBuilder-toggle-view"]:hover,
+label[for="fBuilder-toggle-view"]:focus {
+	transform: scale(1.2);
+}
+
+
+.fBuilder-page {
+	transition: all 0.5s;
+}
+.fBuilder-page.fBuilder-active-page {
+	transform: none;
+}
+
+
+.fBuilder-form-element-container { transition: all 0.2s; }
+.fBuilder-form-element-container.flicker {
+	animation: flicker 0.5s 0s 2 ease;
+}
+@keyframes flicker {
+	from {
+	    opacity: 0.4;
+	    transform: scale(1.005);
+	}
+	to {
+	    opacity: 1;
+	    transform: scale(0.995);
+	}
+}

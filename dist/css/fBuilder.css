@@ -1,0 +1,255 @@
+/* container section [BEGINS] */
+#fBuilder-container, #fBuilder-container * {
+	white-space: nowrap;
+	box-sizing: border-box;
+}
+#fBuilder-container {
+	margin: 10px;
+	padding: 10px;
+	display: flex;
+    align-content: flex-start;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+/* container section [ENDS] */
+
+/* left section [BEGINS] */
+#fBuilder-left {
+	flex-shrink: 0;
+}
+#fBuilder-elements-appender .element-btn .fbuilder-element-btn {
+    width: 100%;
+    border-radius: 0;
+    border-top: none;
+}
+#fBuilder-elements-appender .element-btn:first-child .fbuilder-element-btn {
+	border-top: 1px solid #ccc;
+}
+.fBuilder-left-controls {
+    display: inline-block;
+    vertical-align: top;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.fbuilder-pages-btn {
+    border-radius: 0;
+    width: 100%;
+}
+.fBuilder-page-switcher-container.active {
+	background-color: #dddddd;
+}
+
+	/* page controls */
+
+.fBuilder-page-switcher-container {
+    display: flex;
+    align-content: flex-start;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+.fBuilder-page-short-details,
+.fBuilder-page-short-editor {
+	flex-grow: 1;
+	flex-shrink: 0;
+}
+.fBuilder-page-short-controls {
+	flex-shrink: 0;
+}
+.fBuilder-page-short-details > label {
+    margin: 0;
+}
+
+	/**/
+
+/* left section [ENDS] */
+
+/* middle section [BEGINS] */
+#fBuilder-middle {
+	flex-grow: 1;
+	flex-shrink: 1;
+    margin: 0 10px;
+    min-height: 400px;
+    max-height: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #ccc;
+}
+#fBuilder-middle > .row {
+    margin: 0;
+}
+#fBuilder-middle > .row > .col-sm-12 {
+	padding: 0;
+}
+#fBuilder-middle > .row > .col-sm-12 > .input-group {
+	display: flex;
+	align-content: flex-start;
+	flex-direction: row;
+}
+#fBuilder-form-title {
+	flex-grow: 1;
+}
+#fBuilder-form-title,
+#fBuilder-form-description,
+[data-target="#fBuilder-form-description-container"] {
+	border-radius: 0;
+	resize: none;
+}
+#fBuilder-controls {
+	display: inline-block;
+	vertical-align: top;
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+.fbuilderControls {
+	border-radius: 0;
+	width: 100%;
+}
+/* middle section [ENDS] */
+
+
+
+/* page seciton */
+.fBuilder-page {
+	display: none;
+}
+.fBuilder-page-container {
+    padding: 10px;
+    overflow: hidden;
+    overflow-y: auto;
+    flex-grow: 1;
+    flex-shrink: 1;
+}
+.fbuilder-form-details,
+.fBuilder-page-operations-container {
+	flex-grow: 0;
+	flex-shrink: 0;
+}
+.fBuilder-page.fBuilder-active-page {
+	display: block;
+}
+.fBuilder-form-element-container {
+	display: flex;
+	align-content: flex-start;
+	flex-direction: row;
+	flex-wrap: nowrap;
+    padding: 5px;
+    margin-bottom: 10px;
+    border: 1px solid #cccccc;
+}
+.fBuilder-view-container,
+.fBuilder-editor-container {
+	flex-shrink: 0;
+	flex-grow: 1;
+}
+
+  /* element specific */
+  /* button */
+
+.fBuilder-form-element-btn {
+	border-radius: 0;
+}
+/**/
+
+
+/* right section */
+#fBuilder-right {
+	flex-shrink: 0;
+}
+/**/
+
+.fBuilder-view-container .form-control {
+	border-radius: 0;
+}
+
+
+/* checkbox and radio section */
+
+
+.fBuilder-page-operations-container,
+.fBuilder-form-element-checkbox-options-container-option,
+.fBuilder-form-element-radio-options-container-option,
+.fBuilder-form-element-dropdown-options-container-option,
+.fBuilder-form-element-checkbox-options-container-option-item,
+.fBuilder-form-element-radio-options-container-option-item,
+.fBuilder-form-element-dropdown-options-container-option-item {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: flex-start;
+}
+
+.fBuilder-page-operations-container {
+	padding: 2px 0;
+}
+.fBuilder-form-element-checkbox-options-container-option-item,
+.fBuilder-form-element-radio-options-container-option-item,
+.fBuilder-form-element-dropdown-options-container-option-item,
+.fBuilder-page-operations-main,
+.fBuilder-form-element-checkbox-options-activate,
+.fBuilder-form-element-radio-options-activate {
+	flex-grow: 1;
+	flex-shrink: 0;
+}
+.fBuilder-form-element-checkbox-options-container-option-conrols,
+.fBuilder-form-element-radio-options-container-option-conrols,
+.fBuilder-form-element-dropdown-options-container-option-conrols,
+.fBuilder-page-operations-controls {
+	flex-shrink: 0;
+}
+.fBuilder-page-operations-controls label {
+	margin: 0;
+}
+.fBuilder-move-page-up-btn,
+.fBuilder-move-page-down-btn {
+	border: none;
+    background: none;
+    margin: 0 2px 0 0;
+}
+.fBuilder-form-element-checkbox-options-label,
+.fBuilder-form-element-checkbox-options-tag,
+.fBuilder-form-element-radio-options-label,
+.fBuilder-form-element-radio-options-tag {
+	border-radius: 0;
+	margin: 0 2px;
+}
+.fBuilder-form-element-checkbox-options-container-option,
+.fBuilder-form-element-radio-options-container-option,
+.fBuilder-form-element-dropdown-options-container-option {
+    margin-top: 10px;
+}
+
+.fBuilder-form-element-checkbox-label,
+.fBuilder-form-element-radio-label,
+.fBuilder-form-element-dropdown-label {
+	min-height: 70px;
+	resize: none;
+}
+.fBuilder-form-element-checkbox-label,
+.fBuilder-form-element-checkbox-options,
+.fBuilder-form-element-checkbox-tag-prefix,
+.fBuilder-form-element-radio-label,
+.fBuilder-form-element-radio-options,
+.fBuilder-form-element-radio-tag-prefix,
+.fBuilder-form-element-dropdown-label,
+.fBuilder-form-element-dropdown-options {
+	border-radius: 0;
+}
+.fBuilder-form-element-checkbox-options,
+.fBuilder-form-element-checkbox-tag-prefix,
+.fBuilder-form-element-radio-options,
+.fBuilder-form-element-radio-tag-prefix,
+.fBuilder-form-element-dropdown-options, {
+	border-top: none;
+}
+
+.fBuilder-form-element-container[data-type="checkbox"] .fBuilder-element-extra-controls,
+.fBuilder-form-element-container[data-type="radio"] .fBuilder-element-extra-controls,
+.fBuilder-form-element-container[data-type="dropdown"] .fBuilder-element-extra-controls {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: flex-start;
+}
